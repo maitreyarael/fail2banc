@@ -1,7 +1,7 @@
 # fail2banc
 简介
 ---
-fail2ban 一键安装 \ 卸载脚本魔改版
+fail2ban 一键安装 \ 卸载脚本增强版
 
 环境
 ---
@@ -54,7 +54,8 @@ wget "https://raw.githubusercontent.com/maitreyarael/fail2banc/master/fail2banc.
 
 日志
 ---
-`2018-11-10` : 创建修改centos7不起作用的问题（iptables）
+`2018-11-10` : 创建修改centos7不起作用的问题（iptables） 
+`2022-03-25` : 增加postfix邮件拦截，主要正对smtp防破解 
 
 更多
 ---
