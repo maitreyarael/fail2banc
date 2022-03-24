@@ -79,6 +79,8 @@ bantime = 86400
 maxretry = 3
 findtime = 1800
 banaction = firewallcmd-ipset
+[postfix-sasl]
+enabled = true
 [ssh-iptables]
 enabled = true
 filter = sshd
@@ -102,6 +104,8 @@ ignoreip = 127.0.0.1
 bantime = 86400
 maxretry = ${BLOCKING_THRESHOLD}
 findtime = 1800
+[postfix-sasl]
+enabled = true
 
 [ssh-iptables]
 enabled = true
