@@ -143,6 +143,7 @@ case "${1}" in
 	blocklist|bl)
 		if [ -e /etc/fail2ban/jail.local ];then
 			fail2ban-client status ssh-iptables
+			fail2ban-client status postfix-sasl
 		else
 			echo "fail2ban尚未安装.";exit
 		fi;;
