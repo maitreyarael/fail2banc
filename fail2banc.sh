@@ -155,9 +155,11 @@ case "${1}" in
 					echo "不允许空值,请重试.";exit
 				else
 					fail2ban-client set ssh-iptables unbanip ${UNLOCK_IP}
+					fail2ban-client set postfix-sasl unbanip ${UNLOCK_IP}
 				fi
 			else
 				fail2ban-client set ssh-iptables unbanip ${2}
+				fail2ban-client set postfix-sasl unbanip ${2}
 			fi
 		else
 			echo "fail2ban尚未安装.";exit
